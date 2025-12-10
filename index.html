@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Victor Lab – Computational Neurogenomics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Victor Lab uses long-read RNA sequencing, genetics, and AI to study TDP-43, RNA splicing, and mechanisms of neurodegeneration."
+  />
+
+  <!-- IBM Plex Sans -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Optional animations -->
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">V</span>
+        <span class="logo-text">Victor Lab</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home" class="nav-link is-active">Home</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#software" class="nav-link">Software</a></li>
+          <li><a href="#funding" class="nav-link">Funding</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <main id="home">
+    <section class="hero fade-in-on-scroll" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <!-- Replace with your own video / poster -->
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/hero-poster.jpg"
+        >
+          <source src="assets/hero.mp4" type="video/mp4" />
+          <!-- Fallback: simple gradient background handled by CSS -->
+        </video>
+      </div>
+
+      <div class="hero-overlay">
+        <p class="hero-kicker">Computational Neurogenomics</p>
+        <h1 id="hero-title" class="hero-title">
+          TDP-43, RNA splicing & the social brain
+        </h1>
+        <p class="hero-subtitle">
+          We combine long-read sequencing, human genetics, and AI to uncover
+          mechanisms of neurodegeneration and socio-emotional change in aging.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore our research</a>
+          <a href="#publications" class="btn btn-ghost">View publications</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MISSION / RESEARCH SUMMARY ===================== -->
+    <section id="mission" class="section section--alt fade-in-on-scroll">
+      <div class="container section-grid">
+        <div class="section-content">
+          <h2>Mission</h2>
+          <p>
+            The Victor Lab investigates how RNA splicing, cryptic exons, and
+            TDP-43 dysfunction shape the vulnerable circuits of the social
+            brain. We integrate long-read RNA sequencing, single-cell
+            transcriptomics, and human genetic variation to understand risk and
+            resilience in ALS, FTD, and Alzheimer’s disease.
+          </p>
+          <p>
+            Our goal is to translate mechanistic insight into biomarkers and
+            therapeutic strategies that improve the lives of patients and their
+            families.
+          </p>
+        </div>
+        <div class="section-aside">
+          <div class="pill-list">
+            <span class="pill">TDP-43 & cryptic exons</span>
+            <span class="pill">Long-read RNA-seq</span>
+            <span class="pill">Single-cell transcriptomics</span>
+            <span class="pill">Ancestry-aware genetics</span>
+            <span class="pill">Social brain networks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TWO-COLUMN RESEARCH FOCUS ===================== -->
+    <section class="section fade-in-on-scroll">
+      <div class="container section-split section-split--reverse">
+        <div class="section-split-media">
+          <!-- Replace with your own image -->
+          <div class="image-placeholder">
+            <span>Research themes</span>
+          </div>
+        </div>
+        <div class="section-split-content">
+          <h2>Research areas</h2>
+          <ul class="key-list">
+            <li>
+              <strong>Isoform-level mechanisms.</strong> We use long-read
+              sequencing to resolve full-length isoforms and cryptic exon usage
+              in human brain tissue.
+            </li>
+            <li>
+              <strong>Genetics of splicing.</strong> We map splicing QTLs and
+              rare variants that perturb TDP-43–sensitive transcripts.
+            </li>
+            <li>
+              <strong>Cell-type specificity.</strong> Single-cell approaches
+              reveal how neurons, microglia, and glia contribute to disease
+              trajectories.
+            </li>
+            <li>
+              <strong>Social brain networks.</strong> We connect molecular
+              changes with socio-emotional phenotypes and circuit vulnerability.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in-on-scroll">
+      <div class="container section-split">
+        <div class="section-split-content">
+          <h2>Approach</h2>
+          <p>
+            We work at the intersection of wet lab, computation, and clinical
+            cohorts. Our team collaborates widely to leverage deeply phenotyped
+            brain banks, ancestral diversity, and cutting-edge sequencing
+            platforms.
+          </p>
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-number">10<sup>4</sup>+</span>
+              <span class="stat-label">long-read isoforms profiled</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1000+</span>
+              <span class="stat-label">participants across cohorts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">disease areas</span>
+            </div>
+          </div>
+        </div>
+        <div class="section-split-media">
+          <!-- Replace with your own image -->
+          <div class="image-placeholder">
+            <span>Multi-modal datasets</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section id="team" class="section fade-in-on-scroll">
+      <div class="container">
+        <header class="section-header">
+          <h2>Team</h2>
+          <p>
+            We are a multidisciplinary group of geneticists, computational
+            biologists, and neuroscientists.
+          </p>
+        </header>
+
+        <div class="people-grid">
+          <!-- PI -->
+          <article class="person-card">
+            <h3 class="person-name">Your Name, PhD</h3>
+            <p class="person-role">Principal Investigator</p>
+            <p class="person-meta">
+              Computational genomics · RNA splicing · Neurodegeneration
+            </p>
+            <ul class="tag-row">
+              <li>PI</li>
+              <li>TDP-43</li>
+              <li>Long-read RNA-seq</li>
+            </ul>
+          </article>
+
+          <!-- Example team members -->
+          <article class="person-card">
+            <h3 class="person-name">Researcher A</h3>
+            <p class="person-role">Postdoctoral Fellow</p>
+            <p class="person-meta">
+              Single-cell analysis of TDP-43 burden in affected neurons.
+            </p>
+            <ul class="tag-row">
+              <li>Single-cell</li>
+              <li>ALS</li>
+            </ul>
+          </article>
+
+          <article class="person-card">
+            <h3 class="person-name">Researcher B</h3>
+            <p class="person-role">Graduate Student</p>
+            <p class="person-meta">
+              Genetic modifiers of cryptic exon usage across ancestries.
+            </p>
+            <ul class="tag-row">
+              <li>Genetics</li>
+              <li>Ancestry</li>
+            </ul>
+          </article>
+
+          <article class="person-card">
+            <h3 class="person-name">Researcher C</h3>
+            <p class="person-role">Research Assistant</p>
+            <p class="person-meta">
+              Long-read library prep and brain tissue processing.
+            </p>
+            <ul class="tag-row">
+              <li>Wet lab</li>
+              <li>Long-read</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section section--accent fade-in-on-scroll">
+      <div class="container">
+        <header class="section-header section-header--on-dark">
+          <h2>Projects</h2>
+          <p>
+            Ongoing work across ALS, FTD, Alzheimer’s disease, and the social
+            brain.
+          </p>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3 class="card-title">Long-read atlas of TDP-43–sensitive isoforms</h3>
+            <p class="card-body">
+              Mapping cryptic exons and alternative isoforms in human brain
+              tissue using long-read RNA sequencing to define TDP-43–dependent
+              targets.
+            </p>
+            <ul class="tag-row">
+              <li>Long-read</li>
+              <li>Cryptic exons</li>
+              <li>Human brain</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">
+              Social brain vulnerability in Alzheimer’s disease
+            </h3>
+            <p class="card-body">
+              Linking isoform-level changes and microglial states to
+              socio-emotional trajectories and network degeneration in AD.
+            </p>
+            <ul class="tag-row">
+              <li>Alzheimer’s</li>
+              <li>Social brain</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">
+              Ancestry-aware splicing genetics in ALS and FTD
+            </h3>
+            <p class="card-body">
+              Leveraging diverse cohorts to identify splicing QTLs and rare
+              variants that modulate TDP-43 pathology.
+            </p>
+            <ul class="tag-row">
+              <li>ALS</li>
+              <li>FTD</li>
+              <li>Diverse ancestries</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications" class="section fade-in-on-scroll">
+      <div class="container">
+        <header class="section-header">
+          <h2>Selected publications</h2>
+          <p>For a full and up-to-date list, see our Google Scholar profile.</p>
+        </header>
+
+        <ol class="pub-list">
+          <li class="pub-item">
+            <p class="pub-title">
+              Example paper title about TDP-43–associated cryptic splicing in
+              neurodegeneration.
+            </p>
+            <p class="pub-meta">
+              Your Name, Collaborator A, Collaborator B. <em>Journal Name</em>,
+              2025.
+            </p>
+            <p class="pub-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Publisher</a>
+              ·
+              <a href="#" target="_blank" rel="noopener noreferrer">Preprint</a>
+              ·
+              <a href="#" target="_blank" rel="noopener noreferrer">PDF</a>
+            </p>
+          </li>
+
+          <li class="pub-item">
+            <p class="pub-title">
+              Example paper on long-read RNA sequencing of human brain isoforms.
+            </p>
+            <p class="pub-meta">
+              Your Name, Collaborator C. <em>Genomics Journal</em>, 2024.
+            </p>
+            <p class="pub-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Publisher</a>
+              ·
+              <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+          </li>
+
+          <li class="pub-item">
+            <p class="pub-title">
+              Example paper on ancestry-aware genetic modifiers of splicing.
+            </p>
+            <p class="pub-meta">
+              Collaborator D, Your Name, et al. <em>Human Genetics</em>, 2023.
+            </p>
+            <p class="pub-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Publisher</a>
+              ·
+              <a href="#" target="_blank" rel="noopener noreferrer">Data</a>
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== SOFTWARE ===================== -->
+    <section id="software" class="section section--alt fade-in-on-scroll">
+      <div class="container">
+        <header class="section-header">
+          <h2>Software</h2>
+          <p>Open-source tools and resources from our group.</p>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3 class="card-title">tdpSpliceR</h3>
+            <p class="card-body">
+              An R package for detecting and visualizing TDP-43–linked cryptic
+              exons using long- and short-read RNA-seq.
+            </p>
+            <p class="card-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">isoformScope</h3>
+            <p class="card-body">
+              A lightweight toolkit for isoform-level differential expression
+              and visualization across tissues and cell types.
+            </p>
+            <p class="card-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">neuroSocialMaps</h3>
+            <p class="card-body">
+              Resources for integrating socio-emotional phenotypes with
+              transcriptomic and imaging data in neurodegeneration.
+            </p>
+            <p class="card-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FUNDING ===================== -->
+    <section id="funding" class="section section--accent-soft fade-in-on-scroll">
+      <div class="container">
+        <header class="section-header">
+          <h2>Funding</h2>
+          <p>We gratefully acknowledge support from the following sources.</p>
+        </header>
+
+        <div class="funding-grid">
+          <div class="funding-item">
+            <h3>National Institutes of Health</h3>
+            <p>R01 / R21 grants supporting long-read and single-cell studies.</p>
+          </div>
+          <div class="funding-item">
+            <h3>Foundations</h3>
+            <p>
+              ALS and FTD foundations supporting TDP-43 and social brain
+              mechanisms.
+            </p>
+          </div>
+          <div class="funding-item">
+            <h3>Institute / University</h3>
+            <p>
+              Internal seed funding and computational resources for pilot
+              projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <h3 class="footer-title">Victor Lab</h3>
+        <p>
+          Department of X, University of Y<br />
+          City, State, Country
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3 class="footer-title">Contact</h3>
+        <p>
+          Email:
+          <a href="mailto:youremail@university.edu">youremail@university.edu</a>
+        </p>
+        <p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          ·
+          <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+          ·
+          <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3 class="footer-title">Join us</h3>
+        <p>
+          We welcome inquiries from prospective students, postdocs, and
+          collaborators. Please email a brief statement of interests and a CV.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© <span id="year"></span> Victor Lab</span>
+        <span class="footer-mini">
+          Built with a minimal &amp; gradient hybrid aesthetic.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const nav = document.getElementById("main-nav");
+
+    if (navToggle && nav) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("is-open");
+        navToggle.classList.toggle("is-open", isOpen);
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+    }
+
+    // Active link highlighting on scroll
+    const sections = document.querySelectorAll("main section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function onScroll() {
+      const scrollPos = window.scrollY + 96; // header offset
+      let currentId = "home";
+
+      sections.forEach((section) => {
+        if (section.offsetTop <= scrollPos) {
+          currentId = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        const href = link.getAttribute("href") || "";
+        const id = href.replace("#", "");
+        link.classList.toggle("is-active", id === currentId);
+      });
+    }
+
+    window.addEventListener("scroll", onScroll);
+
+    // Year in footer
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // Optional: fade-in on scroll (used by animations.css)
+    const fadeEls = document.querySelectorAll(".fade-in-on-scroll");
+    if ("IntersectionObserver" in window && fadeEls.length > 0) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      fadeEls.forEach((el) => observer.observe(el));
+    } else {
+      // Fallback: show all
+      fadeEls.forEach((el) => el.classList.add("is-visible"));
+    }
+  </script>
+</body>
+</html>
