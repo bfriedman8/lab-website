@@ -1,0 +1,14 @@
+/* Simple fade-in-on-scroll utilities.
+   JS in index.html adds .is-visible when the element enters the viewport. */
+
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
